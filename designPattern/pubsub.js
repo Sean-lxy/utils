@@ -1,3 +1,9 @@
+/**
+ * @link https://msdn.microsoft.com/en-us/magazine/hh201955.aspx
+ * 
+ * @name 发布订阅模式
+ */
+
 var PubSub = {};
 
 (function(p){
