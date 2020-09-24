@@ -35,7 +35,7 @@ function deepClone(source, map = new WeakMap()) {
 
     const keys = [
       ...Object.getOwnPropertyNames(source),
-      ...getOwnPropertySymbols(source),
+      ...Object.getOwnPropertySymbols(source),
     ];
 
     keys.forEach((key) => (result[key] = deepClone(source[key], map)));
